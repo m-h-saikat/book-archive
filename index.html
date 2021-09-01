@@ -1,19 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap CDN  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    
-    <title>Book Archive </title>
-</head>
-<body>
-  
-    
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Archive</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-5 mb-5 text-white">Book Archive</h1>
+    <!-- //Search Button  -->
 
+    <div class="input-group mb-3 mx-auto w-50">
+      <input
+        id="search-text"
+        type="text"
+        class="form-control"
+        placeholder="Search Book By Name"
+        aria-label="Search Book By Name"
+        aria-describedby="button-addon2"
+      />
+      <button
+        id="search-btn"
+        onclick="searchBook()"
+        class="btn btn-dark btn-outline-light ms-1"
+        type="button"
+        id="button-addon2"
+      >
+        Search
+      </button>
+    </div>
+
+    <!-- total search  Found -->
+    <h3 id="totalSearchFound" class="text-center text-white"></h3>
+
+    <!-- Details Modal -->
+    <div
+      class="modal fade"
+      id="detailsContainer"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h2 class="modal-title fw-bold" id="modal-book-name"></h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body fs-5" id="modal-book-details"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="booksContainer"
+      class="position-relative row row-cols-1 row-cols-sm-3 pt-5 g-4"
+    ></div>
+
+    <!-- JS Link  -->
     <script src="book.js"></script>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

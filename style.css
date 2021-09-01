@@ -1,0 +1,21 @@
+body {
+  background-color: #6a5acd;
+}
+
+.book {
+  background-color: white;
+  height: 400px;
+  box-shadow: 5px 10px;
+}
+h1 {
+  font-size: 3.5em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 780px) {
+  .country {
+    height: 250px;
+  }
+}
