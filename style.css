@@ -2,11 +2,14 @@ body {
   /* background-color: #6a5acd; */
   background-image: url(background.jpg);
   background-size: cover;
+ 
 }
 .book {
   background-color: white;
   height: 450px;
   box-shadow: 5px 10px;
+ width: 90%;
+
 }
 h1 {
   font-size: 3.5em;

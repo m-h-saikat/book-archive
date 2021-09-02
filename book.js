@@ -64,7 +64,7 @@ bookArray.forEach((book) => {
 
   // Book Picture & Title Add & add a div
   div.innerHTML = `
-   <div class="book border rounded"  data-bs-toggle="modal" data-bs-target="#detailsContainer">
+   <div class="book border rounded mx-auto"  data-bs-toggle="modal" data-bs-target="#detailsContainer ">
     <img height="300" src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
  
           <h4 class="text-center text-black fw-bold  bottom-0 w-100 m-0 px-3 pt-5 pb-2 lh-1"
