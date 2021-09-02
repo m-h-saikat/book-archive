@@ -9,7 +9,7 @@ const searchBook = () => {
   const searchedFor = document.getElementById("search-text");
   const searchText = searchedFor.value;
 
-  if (searchText == "") {
+  if (searchText === "") {
     container.innerHTML = `
         <h3 class="position-absolute w-100 fw-bold text-center text-white d-flex align-items-center justify-content-center" style='height:200px'>
 
@@ -17,6 +17,7 @@ const searchBook = () => {
 
         </h3>`;
   } else {
+
     container.innerText = "";
     //Get API
 
